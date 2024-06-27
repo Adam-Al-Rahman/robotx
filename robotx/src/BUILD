@@ -1,4 +1,11 @@
-load("//robotx/core/default:rules_cc.bzl", "cc_binary")
+load("//robotx/core/default:rules_cc.bzl", "cc_binary", "cc_test")
+
+cc_test(
+    name = "main_test",
+    srcs = ["main_test.cc"],
+    deps = ["@googletest//:gtest_main"],
+    visibility = ["//visibility:public"],
+)
 
 cc_binary(
     name = "main",
