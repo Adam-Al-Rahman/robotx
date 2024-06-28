@@ -111,6 +111,35 @@
         ]
       }
     },
+    "//third_party/libtorch:workspace.bzl%libtorch": {
+      "general": {
+        "bzlTransitiveDigest": "YaccZ0acOJo6B0XX8l4LoiYq3KAolGz/vPTRj6hNbb8=",
+        "usagesDigest": "zefYJnuaym5juhgWHWZ5nSqRGumm/9JmkrSZo3V5ELI=",
+        "recordedFileInputs": {},
+        "recordedDirentsInputs": {},
+        "envVariables": {},
+        "generatedRepoSpecs": {
+          "libtorch": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_archive",
+            "attributes": {
+              "add_prefix": "",
+              "url": "https://download.pytorch.org/libtorch/cu121/libtorch-cxx11-abi-shared-with-deps-2.3.1%2Bcu121.zip",
+              "build_file": "@@//third_party/libtorch:libtorch.BUILD",
+              "sha256": "10f2fdc44e7f657f2483c948d21847316ae6b214e850744d5713affc3133f1cb",
+              "strip_prefix": "libtorch"
+            }
+          }
+        },
+        "recordedRepoMappingEntries": [
+          [
+            "",
+            "bazel_tools",
+            "bazel_tools"
+          ]
+        ]
+      }
+    },
     "@@apple_support~//crosstool:setup.bzl%apple_cc_configure_extension": {
       "general": {
         "bzlTransitiveDigest": "PjIds3feoYE8SGbbIq2SFTZy3zmxeO2tQevJZNDo7iY=",

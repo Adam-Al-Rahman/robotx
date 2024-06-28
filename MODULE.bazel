@@ -5,10 +5,14 @@ bazel_dep(name = "platforms", version = "0.0.9")
 bazel_dep(name = "bazel_skylib", version = "1.6.1")
 bazel_dep(name = "rules_cc", version = "0.0.9")
 
-hedron = use_extension("//third_party/hedron:workspace.bzl", "hedron")
-use_repo(hedron, "hedron_compile_commands")
-
 bazel_dep(name = "abseil-cpp", version = "20240116.2")
 bazel_dep(name = "googletest", version = "1.14.0.bcr.1")
 bazel_dep(name = "glog", version = "0.7.1")
 bazel_dep(name = "gflags", version = "2.2.2")
+
+# Add Third Party Dependencies
+hedron = use_extension("//third_party/hedron:workspace.bzl", "hedron")
+use_repo(hedron, "hedron_compile_commands")
+
+libtorch = use_extension("//third_party/libtorch:workspace.bzl", "libtorch")
+use_repo(libtorch, "libtorch")

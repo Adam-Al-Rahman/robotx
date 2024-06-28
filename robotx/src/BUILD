@@ -3,7 +3,7 @@ load("//robotx/core/default:rules_cc.bzl", "cc_binary", "cc_test")
 cc_test(
     name = "main_test",
     srcs = ["main_test.cc"],
-    deps = ["@googletest//:gtest_main"],
+    deps = ["@googletest//:gtest", "@googletest//:gtest_main"],
     visibility = ["//visibility:public"],
 )
 
@@ -11,4 +11,5 @@ cc_binary(
     name = "main",
     srcs = ["main.cc"],
     visibility = ["//visibility:public"],
+    deps = ["@libtorch//:torch"],
 )

@@ -31,7 +31,7 @@ build:libc++ --define force_libcpp=enabled
 build:libc++ --linkopt -fuse-ld=lld
 
 
-# By default, build NW in C++ 20 mode.
+# By default, build RX in C++ 20 mode.
 build:linux --cxxopt=-std=c++20
 build:linux --host_cxxopt=-std=c++20
 build:windows --cxxopt=/std:c++20
